@@ -31,5 +31,14 @@ Mehr Informationen zum Stack findest du [hier](https://de.wikipedia.org/wiki/Sta
 Der Stackpointer ist ein Zeiger welcher auf den nächsten freien Platz im Stack zeigt. Falls dieser auf den letzten Platz zeigt ist der Stack leer. In unserer Einheit zeigte er jedoch auf die Adresse "08FF", was kein Problem darstellt. Sollte er jedoch auf eine Adresse die außerhalb seines deffinierten Bereiches liegt zeigen spricht man von einem **Stackoverflow**. Dieser Stackoverflow kann zu Probleme führen welche nicht immer sofort erkennbar sind.  
 ## Praktisches Arbeiten
 Am Ende der Einheit erstellten wir eine Quelltext welcher in Atmel Studio Simuliert wurde. Wir mussten dann herausfinden was die entstandenen Maschinenbefehle bedeuteten. Dies machten wir mithilfe des Atmel Instruction Set Manual. Hierbei ist zu achten dass das richtige Handbuch zum richtigen Prozessor verwendet wird, da es kleine abweichungen der Maschinenbefehle geben kann.  
-Das richtige Handbuch zum verwendeten Prozessor findest du [hier](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-0856-AVR-Instruction-Set-Manual.pdf).
+Das richtige Handbuch zum verwendeten Prozessor findest du [hier](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-0856-AVR-Instruction-Set-Manual.pdf).  
+
+Maschienenbefehl | Ausführung
+--- | --- 
+JMP | Sprung zu einer bestimmten Adresse (benötigt 8 Bytes) 
+RJMP | Sprung zu einer Adresse (Offset muss eingehalten werden, benötigt 4 Bytes) 
+CLR | Register wird mit Nullen überschrieben (Realisierung durch XOR-Verknüpfung mit sich selbst) 
+OUT | schreibt Daten von einem in ein anderes Register 
+LDI | Konstante wird in Register geschrieben (nur bei Registern 16-31 möglich) 
+SER | Register wird auf den höchstmöglichen Wert gesetzt 
 
