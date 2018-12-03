@@ -20,8 +20,28 @@ Eckdaten **ATmega328p**:
 * 32kB Flashspeicher
 * 32 Register
 * 2kB SRAM
-* 1kB EEPROM  
+* 1kB EEPROM 
+
+## Grundlagen einer CPU
+Die CPU(Central Prozessing Unit) ist das wichtigste Glied in einem Rechner. Ohne ihr kann kein Rechner funktionieren.
+Die Hauptaufgaben einer CPU sind rechnen und steuern.  
+Quelle: FIV Skriptum
+![alt text](https://camo.githubusercontent.com/701946e147b00b706f76e51baeecabe266bd9062/68747470733a2f2f696d672e7069636c6f61642e6f72672f696d6167652f64636c6c707269692f6370755f7376672e706e67)
   
+Im wesentlichen besteht eine CPU aus vier Teilen, die Bearbeitung der Daten, Adressberechnung, Befehlsausführung, Busbehandlung.  
+Der erste Teil beinhaltet die Bearbeitung der Daten. Die Hauptkomponenten dafür sind **ALU** und **Datenregister**.  
+Der zweite Teil beihaltet die Adressberechnung. Die Hauptkomponenten dafür sind **Befählszähler** und **Adressregister**.  
+Der dritte Teil beinhaltet die Befehlsausführung. Die Hauptkomponenten dafür sind **Befehlsausführung** und **Befehlsregister**.  
+der letzte Teil beinhaltet die Busbehandlung. Die Busbehandlung sorgt daür dass die Ein- und Ausgänge richtig mit der CPU interagieren. 
+    
+## Der Speicher
+### 1. **Flash Speicher**
+Der Flashspeicher ist eine Weierentwicklung des EEPROM (Electrical Erasable and Programmable Read Only Memory). Er kommt ohne bewegliche Teile aus und die Daten bleiben nach dem abschalten der Energieversorgung erhalten.
+### 2. **SRAM**
+Der Speicher ist beim **SRAM** mittels FlipFlops aufgebaut, desswegen ist er sehr schnell aber benötigt er viel Strom und ist auch sehr teuer. Er wird daher auch nur als kleiner Speicher wie zum Beispiel für Cache bentuzt.
+### 3. **DRAM**
+DRAM wird bei Computer am heufigsten verwendet da er sehr Günstig im vergleich zu den anderen Technologien ist. Sein Verwendungszweck ist als Arbeits- bzw- Hauptspeicher.   
+
 ## Der Stack
 Der Stack, im Deutschen auch Stapelspeicher genannt, ist ein wichtiger Teil des Speichers. Hier werden Daten nach dem LastIn-FirstOut(LIFO) Prinzip abgelegt bzw. aufgerufen. Dieses Prinzip ist mit einem Stapel Bücher zu vergleichen. Das letzte Buch welches auf den Stapel gelegt wurde wird auch als Erstes wieder vom Stapel herunter genommen.  
 Mehr Informationen zum Stack findest du [hier](https://de.wikipedia.org/wiki/Stapelspeicher).  
