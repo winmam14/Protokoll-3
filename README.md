@@ -23,4 +23,6 @@ Eckdaten **ATmega328p**:
 ## Der Stack
 Der Stack, im Deutschen auch Stapelspeicher genannt, ist ein wichtiger Teil des Speichers. Hier werden Daten nach dem LastIn-FirstOut(LIFO) Prinzip abgelegt bzw. aufgerufen. Dieses Prinzip ist mit einem Stapel Bücher zu vergleichen. Das letzte Buch welches auf den Stapel gelegt wurde wird auch als Erstes wieder vom Stapel herunter genommen.  
 Mehr Informationen zum Stack findest du [hier](https://de.wikipedia.org/wiki/Stapelspeicher).  
-![Stack](https://www.google.at/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiCnPL_kITfAhUSdxoKHTQQDBwQjRx6BAgBEAU&url=https%3A%2F%2Fwww.der-wirtschaftsingenieur.de%2Findex.php%2Fstack-datenstruktur-in-c%2F&psig=AOvVaw1AS0vRkHQ8NBydR_HNDKjl&ust=1543942560267683"Stack")
+  ![alt text](https://www.der-wirtschaftsingenieur.de/bilder/stack.PNG "Stack im Dateisystem")
+
+## 
